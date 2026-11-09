@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Learn about Rapha Senior Independence Shared Living, our mission, vision, and community values."
+    >
+    <title>About Us | Rapha Senior Independence Shared Living</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="{{ url_for('static', filename='blue.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="blue-header">
+      <a class="blue-brand" href="/" aria-label="Rapha Senior Living home">
+        <img class="brand-mark" src="{{ url_for('static', filename='rapha-mark.png') }}" alt="">
+        <span class="brand-name">Rapha <small>Senior Independence Shared Living</small></span>
+      </a>
+      <nav class="blue-nav" aria-label="Main navigation">
+        <a href="/">Home</a>
+        <a href="#about-intro" aria-current="page">About</a>
+        <a href="/housing">Housing</a>
+        <a href="/meals">Meals &amp; Food Services</a>
+        <a href="/#activities">Activities</a>
+        <a href="/#faqs">FAQs</a>
+        <a class="contact-link" href="/#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main" class="about-page">
+      <section class="about-hero" id="about-intro">
+        <h1>About Us</h1>
+        <p class="about-hero-lead">
+          Helping seniors enjoy independent living through comfortable shared housing,
+          friendship, and community.
+        </p>
+      </section>
+
+      <section class="about-story" aria-labelledby="story-heading">
+        <div class="story-heading">
+          <p class="eyebrow">OUR COMMUNITY</p>
+          <h2 id="story-heading">A place to feel<br>respected and at home.</h2>
+        </div>
+        <div class="story-copy">
+          <p>Our community was created to give seniors a comfortable place to live.</p>
+          <p>
+            We believe older adults should have the opportunity to enjoy life, meet new
+            people, and maintain their independence.
+          </p>
+          <p>
+            Our shared living home provides a welcoming environment where residents can
+            enjoy their privacy while also having opportunities to socialize and make friends.
+          </p>
+          <p>We want everyone who lives in our community to feel respected, valued, and at home.</p>
+        </div>
+      </section>
+
+      <section class="community-gallery gallery-about" aria-labelledby="about-gallery-heading">
+        <div class="gallery-heading">
+          <p class="eyebrow">EVERYDAY MOMENTS AT RAPHA</p>
+          <h2 id="about-gallery-heading">Connection makes a community.</h2>
+          <p>We make space for the simple moments that help people feel welcome.</p>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-card">
+            <img
+              src="{{ url_for('static', filename='community-visit.jpg') }}"
+              alt="A caregiver spending time with an older adult at home"
+              loading="lazy"
+            >
+            <figcaption>Time to talk and connect.</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img
+              src="{{ url_for('static', filename='community-garden.jpg') }}"
+              alt="Older adults enjoying conversation together in a garden"
+              loading="lazy"
+            >
+            <figcaption>Friendship, indoors and out.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="about-pillars" aria-label="Our mission and vision">
+        <article class="pillar-card">
+          <span class="pillar-number" aria-hidden="true">01</span>
+          <h2>Our Mission</h2>
+          <p>
+            Our mission is to provide comfortable and shared housing for seniors while
+            encouraging independence, friendship, and a better quality of life.
+          </p>
+        </article>
+        <article class="pillar-card vision-card">
+          <span class="pillar-number" aria-hidden="true">02</span>
+          <h2>Our Vision</h2>
+          <p>
+            Our vision is to create a happy and welcoming community where seniors can
+            enjoy living together, build friendships, and feel less alone.
+          </p>
+        </article>
+      </section>
+
+      <section class="about-values" aria-labelledby="values-heading">
+        <div class="values-intro">
+          <p class="eyebrow">WHAT MATTERS TO US</p>
+          <h2 id="values-heading">Our Values</h2>
+          <p>These are the principles that shape everyday life in our community.</p>
+        </div>
+        <ul class="values-list">
+          <li>Respect and kindness.</li>
+          <li>Independence and freedom.</li>
+          <li>Comfortable and shared housing.</li>
+          <li>Friendship and companionship.</li>
+          <li>Privacy and comfort.</li>
+          <li>A sense of community.</li>
+        </ul>
+      </section>
+
+      <section class="about-invitation">
+        <p class="eyebrow">RAPHA SENIOR INDEPENDENCE SHARED LIVING</p>
+        <h2>A place to call home.</h2>
+        <a class="primary-button" href="/">Return to the homepage <span aria-hidden="true">→</span></a>
+      </section>
+    </main>
+
+    <footer class="blue-footer">
+      <a class="blue-brand" href="/" aria-label="Rapha Senior Living home">
+        <img class="brand-mark" src="{{ url_for('static', filename='rapha-mark.png') }}" alt="">
+        <span class="brand-name">Rapha <small>Senior Independence Shared Living</small></span>
+      </a>
+      <p>Helping seniors enjoy independent living through comfortable shared housing, friendship, and community.</p>
+      <a class="footer-top" href="#main">Back to top ↑</a>
+    </footer>
+  </body>
+</html>

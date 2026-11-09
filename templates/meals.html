@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Learn about meals and food service questions for Rapha Senior Independence Shared Living."
+    >
+    <title>Meals &amp; Food Services | Rapha Senior Independence Shared Living</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="{{ url_for('static', filename='blue.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='meals.css') }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="blue-header">
+      <a class="blue-brand" href="/" aria-label="Rapha Senior Living home">
+        <img class="brand-mark" src="{{ url_for('static', filename='rapha-mark.png') }}" alt="">
+        <span class="brand-name">Rapha <small>Senior Independence Shared Living</small></span>
+      </a>
+      <nav class="blue-nav" aria-label="Main navigation">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/housing">Housing</a>
+        <a href="#meals" aria-current="page">Meals &amp; Food Services</a>
+        <a href="/#activities">Activities</a>
+        <a href="/#faqs">FAQs</a>
+        <a class="contact-link" href="/#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main" class="meals-page">
+      <section class="meals-hero" id="meals">
+        <div class="meals-hero-copy">
+          <p class="eyebrow">SHARED TABLES. WELCOMING MOMENTS.</p>
+          <h1>Meals &amp; Food<br><span>Services</span></h1>
+          <p class="meals-lead">
+            Sharing a meal can be a wonderful way to connect and feel at home.
+          </p>
+          <p>
+            Learn about food-service options at Rapha and what to ask as you explore
+            shared living.
+          </p>
+        </div>
+        <figure class="meals-photo">
+          <img
+            src="{{ url_for('static', filename='community-meals.jpg') }}"
+            alt="Older adults from different backgrounds sharing a meal around a table"
+          >
+          <figcaption>Shared meals bring people together.</figcaption>
+        </figure>
+      </section>
+
+      <section class="meals-details" aria-labelledby="meals-details-heading">
+        <div class="meals-details-heading">
+          <p class="eyebrow">MEALS AND SHARED LIVING</p>
+          <h2 id="meals-details-heading">Meals and Food Services</h2>
+          <p>We understand that having convenient meals is important.</p>
+          <p>Our community may offer meal arrangements to make everyday living easier.</p>
+        </div>
+        <ul class="meal-offerings">
+          <li>Breakfast, lunch, and dinner options.</li>
+          <li>Home-cooked meals.</li>
+          <li>Shared dining experiences.</li>
+          <li>Food preparation arrangements.</li>
+          <li>Consideration of food preferences.</li>
+        </ul>
+        <p class="meals-note">
+          We also encourage residents to enjoy meals together and build friendships around
+          the dining table.
+        </p>
+      </section>
+
+      <section class="meals-next">
+        <h2>Explore the shared living home.</h2>
+        <a class="primary-button" href="/housing">View Housing &amp; Amenities <span aria-hidden="true">→</span></a>
+      </section>
+    </main>
+
+    <footer class="blue-footer">
+      <a class="blue-brand" href="/" aria-label="Rapha Senior Living home">
+        <img class="brand-mark" src="{{ url_for('static', filename='rapha-mark.png') }}" alt="">
+        <span class="brand-name">Rapha <small>Senior Independence Shared Living</small></span>
+      </a>
+      <p>Helping seniors enjoy independent living through comfortable shared housing, friendship, and community.</p>
+      <a class="footer-top" href="#main">Back to top ↑</a>
+    </footer>
+  </body>
+</html>

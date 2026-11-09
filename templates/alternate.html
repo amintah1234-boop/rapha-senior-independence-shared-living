@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Discover Rapha Senior Independence Shared Living, a friendly community for independent living and friendship."
+    >
+    <title>Rapha Senior Living | A Welcoming Community</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="{{ url_for('static', filename='alternate.css') }}">
+  </head>
+  <body>
+    <header class="alt-header">
+      <a class="alt-brand" href="#top">
+        <img class="alt-brand-mark" src="{{ url_for('static', filename='rapha-mark.png') }}" alt="">
+        <span>Rapha <small>Senior Independence Shared Living</small></span>
+      </a>
+      <nav class="alt-nav" aria-label="Main navigation">
+        <a href="#top">Home</a>
+        <a href="#about">About</a>
+        <a href="#housing">Housing</a>
+        <a href="/meals">Meals &amp; Food Services</a>
+        <a href="#activities">Activities</a>
+        <a href="#faqs">FAQs</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="design-link" href="/">View final blue design</a>
+    </header>
+
+    <main>
+      <section class="alt-hero" id="top">
+        <div class="alt-hero-copy">
+          <p class="alt-eyebrow"><span></span> A COMMUNITY THAT FEELS LIKE HOME</p>
+          <h1>Independent<br>living, <em>together.</em></h1>
+          <p class="alt-tagline">Live independently. Enjoy friendship. Feel at home.</p>
+          <p class="alt-description">
+            A comfortable shared living environment for seniors to enjoy their
+            independence and build friendships.
+          </p>
+          <a class="alt-button" href="#about">Meet our community <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="alt-hero-image">
+          <img
+            src="{{ url_for('static', filename='community-activity.webp') }}"
+            alt="Older adults enjoying an art activity together around a table"
+          >
+          <div class="image-label"><span aria-hidden="true">✳</span> A place to call home</div>
+        </div>
+        <div class="alt-hero-bottom" aria-hidden="true">
+          <span>INDEPENDENCE</span><span>COMPANIONSHIP</span><span>BELONGING</span>
+        </div>
+      </section>
+
+      <section class="alt-about" id="about">
+        <div class="alt-about-heading">
+          <p class="alt-eyebrow">WELCOME TO OUR COMMUNITY</p>
+          <h2>More than a place to live.</h2>
+          <span class="accent-line" aria-hidden="true"></span>
+        </div>
+        <div class="alt-about-copy">
+          <p class="alt-lead">Welcome to Rapha Senior Independence Shared Living</p>
+          <p>
+            We provide a friendly and comfortable shared living environment for older
+            adults who want to enjoy independent living without living alone.
+          </p>
+          <p>
+            We understand that living alone can sometimes be lonely and expensive. Our
+            goal is to give seniors another housing option where they can enjoy comfort,
+            friendship, and a sense of belonging.
+          </p>
+          <p>
+            Residents can enjoy their own personal space while sharing common areas,
+            meals, and activities with others.
+          </p>
+          <p>
+            Our community is built on respect, kindness, independence, and friendship.
+            We believe everyone deserves a comfortable home and a place where they feel
+            welcome.
+          </p>
+        </div>
+      </section>
+
+      <section class="alt-values" aria-label="Our community values">
+        <p class="alt-eyebrow">WHAT MAKES A COMMUNITY</p>
+        <div class="alt-value-list">
+          <div><span>01</span><strong>Respect</strong></div>
+          <div><span>02</span><strong>Kindness</strong></div>
+          <div><span>03</span><strong>Independence</strong></div>
+          <div><span>04</span><strong>Friendship</strong></div>
+        </div>
+      </section>
+
+      <section class="alt-more">
+        <p class="alt-eyebrow">YOUR NEXT CHAPTER</p>
+        <h2>Explore life at Rapha.</h2>
+        <p>We’ll add each page as you share its details.</p>
+        <div class="alt-cards">
+          <a id="housing" href="#housing"><span>01</span><strong>Housing</strong><i aria-hidden="true">↗</i></a>
+          <a href="/meals"><span>02</span><strong>Meals &amp; Food Services</strong><i aria-hidden="true">↗</i></a>
+          <a id="activities" href="#activities"><span>03</span><strong>Activities</strong><i aria-hidden="true">↗</i></a>
+          <a id="faqs" href="#faqs"><span>04</span><strong>FAQs</strong><i aria-hidden="true">↗</i></a>
+          <a id="contact" href="#contact"><span>05</span><strong>Contact</strong><i aria-hidden="true">↗</i></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="alt-footer">
+      <a class="alt-brand" href="#top">
+        <img class="alt-brand-mark" src="{{ url_for('static', filename='rapha-mark.png') }}" alt="">
+        <span>Rapha <small>Senior Independence Shared Living</small></span>
+      </a>
+      <p>Live independently. Enjoy friendship. Feel at home.</p>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+  </body>
+</html>

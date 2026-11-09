@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Explore the shared spaces and amenities that may be part of Rapha Senior Independence Shared Living."
+    >
+    <title>Housing &amp; Amenities | Rapha Senior Independence Shared Living</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="{{ url_for('static', filename='blue.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='housing.css') }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="blue-header">
+      <a class="blue-brand" href="/" aria-label="Rapha Senior Living home">
+        <img class="brand-mark" src="{{ url_for('static', filename='rapha-mark.png') }}" alt="">
+        <span class="brand-name">Rapha <small>Senior Independence Shared Living</small></span>
+      </a>
+      <nav class="blue-nav" aria-label="Main navigation">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="#housing-intro" aria-current="page">Housing</a>
+        <a href="/meals">Meals &amp; Food Services</a>
+        <a href="/#activities">Activities</a>
+        <a href="/#faqs">FAQs</a>
+        <a class="contact-link" href="/#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main" class="housing-page">
+      <section class="housing-hero" id="housing-intro">
+        <div class="housing-hero-copy">
+          <p class="eyebrow">A COMFORTABLE PLACE TO CALL HOME</p>
+          <h1>Housing &amp;<br><span>Amenities</span></h1>
+          <p class="housing-lead">
+            We want our residents to feel comfortable and enjoy their living space.
+          </p>
+          <p class="housing-slogan">
+            Helping seniors enjoy independent living through comfortable shared housing,
+            friendship, and community.
+          </p>
+        </div>
+        <figure class="housing-photo">
+          <img
+            src="{{ url_for('static', filename='housing-interior.jpg') }}"
+            alt="Bright shared dining and living space in a home"
+          >
+          <figcaption>
+            Example of a shared living space. Actual housing may vary.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="amenities-section" aria-labelledby="amenities-heading">
+        <div class="amenities-heading">
+          <p class="eyebrow">A PLACE WITH ROOM TO FEEL AT HOME</p>
+          <h2 id="amenities-heading">Our housing may include:</h2>
+        </div>
+        <ul class="amenities-grid">
+          <li><span aria-hidden="true">01</span><strong>Private bedrooms</strong></li>
+          <li><span aria-hidden="true">02</span><strong>Comfortable living rooms</strong></li>
+          <li><span aria-hidden="true">03</span><strong>Shared kitchen and dining areas</strong></li>
+          <li><span aria-hidden="true">04</span><strong>Laundry facilities</strong></li>
+          <li class="agreement-item">
+            <span aria-hidden="true">05</span>
+            <strong>Utilities and internet</strong>
+            <small>Depending on the rental agreement.</small>
+          </li>
+          <li><span aria-hidden="true">06</span><strong>Outdoor spaces for relaxation</strong></li>
+          <li><span aria-hidden="true">07</span><strong>Shared household amenities</strong></li>
+          <li><span aria-hidden="true">08</span><strong>24/7 Staff Support</strong></li>
+        </ul>
+        <p class="agreement-note">
+          Utilities and internet availability may vary depending on the rental agreement.
+        </p>
+      </section>
+
+      <section class="housing-promise">
+        <span class="promise-mark" aria-hidden="true">R</span>
+        <p>
+          Our goal is to provide a clean, comfortable, and welcoming place that residents
+          can call home.
+        </p>
+      </section>
+
+      <section class="independent-section" aria-labelledby="independent-heading">
+        <div class="detail-heading">
+          <p class="eyebrow">INDEPENDENCE &amp; PERSONAL CHOICE</p>
+          <h2 id="independent-heading">Independent Living</h2>
+          <p class="detail-subheading">Your Life, Your Choices</p>
+        </div>
+        <ul class="independent-copy detail-list">
+          <li>We respect every resident’s right to make their own decisions and manage their daily lives.</li>
+          <li>
+            Our community is designed for seniors who can take care of their personal needs
+            and daily activities independently.
+          </li>
+          <li>
+            Residents are responsible for their personal care, medications, healthcare,
+            and everyday routines.
+          </li>
+          <li>
+            We provide a shared housing environment where residents can enjoy their
+            independence while living among others.
+          </li>
+        </ul>
+      </section>
+
+      <section class="transport-section" aria-labelledby="transport-heading">
+        <div class="detail-heading">
+          <p class="eyebrow">STAYING CONNECTED</p>
+          <h2 id="transport-heading">Transportation and Community Resources</h2>
+          <p>
+            We understand that getting to appointments, shopping, and community activities
+            can sometimes be difficult.
+          </p>
+          <p>
+            We can help residents find information about transportation services and arrange
+            transportation through available outside providers.
+          </p>
+        </div>
+        <div class="transport-options">
+          <h3>Transportation may be arranged for:</h3>
+          <ul class="detail-list">
+            <li>Doctor appointments.</li>
+            <li>Grocery shopping.</li>
+            <li>Personal errands.</li>
+            <li>Senior center activities.</li>
+            <li>Social outings.</li>
+          </ul>
+          <p class="detail-closing">Our goal is to help residents stay connected with their community.</p>
+        </div>
+      </section>
+
+      <section class="resident-fit-section" aria-label="Resident information">
+        <article class="resident-fit-card" aria-labelledby="resident-fit-heading">
+          <p class="eyebrow">A SHARED LIVING COMMUNITY</p>
+          <h2 id="resident-fit-heading">Who Can Live Here?</h2>
+          <p>Our community is designed for seniors who:</p>
+          <ul class="detail-list">
+            <li>Want comfortable shared housing.</li>
+            <li>Enjoy living with other people.</li>
+            <li>Can manage their personal care independently.</li>
+            <li>Want to maintain their freedom and privacy.</li>
+            <li>Enjoy social activities and companionship.</li>
+            <li>Are comfortable sharing household spaces.</li>
+            <li>Want a comfortable place to call home.</li>
+          </ul>
+        </article>
+        <article class="resident-fit-card choose-card" aria-labelledby="choose-heading">
+          <p class="eyebrow">A PLACE TO CONNECT AND BELONG</p>
+          <h2 id="choose-heading">Why Choose Our Community?</h2>
+          <p>
+            Finding a good place to live is important. We want seniors and their families
+            to feel comfortable choosing our community.
+          </p>
+          <h3>We offer:</h3>
+          <ul class="detail-list">
+            <li>Shared housing.</li>
+            <li>Comfortable bedrooms.</li>
+            <li>Shared household spaces.</li>
+            <li>Meal options.</li>
+            <li>Social activities.</li>
+            <li>Game nights and entertainment.</li>
+            <li>Opportunities to make friends.</li>
+            <li>A welcoming and respectful environment.</li>
+            <li>Freedom and independence.</li>
+          </ul>
+        </article>
+        <p class="resident-fit-closing">
+          We offer more than a place to live. We offer a place to connect, share, and belong.
+        </p>
+      </section>
+
+      <section class="housing-next">
+        <h2>Learn more about our community.</h2>
+        <a class="primary-button" href="/about">Visit our About page <span aria-hidden="true">→</span></a>
+      </section>
+    </main>
+
+    <footer class="blue-footer">
+      <a class="blue-brand" href="/" aria-label="Rapha Senior Living home">
+        <img class="brand-mark" src="{{ url_for('static', filename='rapha-mark.png') }}" alt="">
+        <span class="brand-name">Rapha <small>Senior Independence Shared Living</small></span>
+      </a>
+      <p>Helping seniors enjoy independent living through comfortable shared housing, friendship, and community.</p>
+      <a class="footer-top" href="#main">Back to top ↑</a>
+    </footer>
+  </body>
+</html>

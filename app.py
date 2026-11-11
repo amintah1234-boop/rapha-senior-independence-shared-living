@@ -20,7 +20,7 @@ def robots():
 
 @app.get("/sitemap.xml")
 def sitemap():
-    pages = ("", "/about", "/housing", "/meals")
+    pages = ("/", "/about", "/housing", "/meals")
     urls = "".join(
         f"<url><loc>{SITE_URL}{page}</loc></url>" for page in pages
     )

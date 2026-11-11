@@ -19,8 +19,7 @@
   <body>
     <header class="site-header">
       <a class="brand" href="#home" aria-label="Rapha Senior Living home">
-        <img class="brand-mark" src="{{ url_for('static', filename='rapha-mark.png') }}" alt="">
-        <span class="brand-name">Rapha <span>Senior Living</span></span>
+        <img class="brand-mark" src="{{ url_for('static', filename='rapha-mark.png') }}" alt="Rapha Senior Independence Shared Living">
       </a>
       <nav class="main-nav" aria-label="Main navigation">
         <a href="#home">Home</a>
@@ -30,9 +29,19 @@
         <a href="#activities">Activities</a>
         <a href="#faqs">FAQs</a>
         <a class="nav-contact" href="#contact">Contact</a>
-        <a class="template-switch" href="/alternate">View another design</a>
-        <a class="template-switch" href="/blue">View blue design</a>
       </nav>
+      <details class="main-menu">
+        <summary class="menu-toggle">Menu <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span></summary>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#welcome">About</a>
+          <a href="#housing">Housing</a>
+          <a href="/meals">Meals &amp; Food Services</a>
+          <a href="#activities">Activities</a>
+          <a href="#faqs">FAQs</a>
+          <a class="nav-contact" href="#contact">Contact</a>
+        </nav>
+      </details>
     </header>
 
     <main>
@@ -42,8 +51,8 @@
           <h1>A place to<br><em>call home.</em></h1>
           <p class="hero-tagline">Live independently. Enjoy friendship. Feel at home.</p>
           <p class="hero-description">
-            We offer a comfortable place for seniors to live, enjoy their independence,
-            and build friendships with others.
+            Rapha offers a comfortable, supportive place for seniors to enjoy independence,
+            connection, and a sense of belonging with others.
           </p>
           <a class="button" href="#welcome">Welcome to our community <span aria-hidden="true">→</span></a>
           <div class="hero-note">
@@ -62,7 +71,12 @@
             <span>Independent living. A shared sense of home.</span>
           </div>
         </div>
-        <div class="hero-watermark" aria-hidden="true">R</div>
+        <img
+          class="hero-watermark"
+          src="{{ url_for('static', filename='rapha-mark.png') }}"
+          alt=""
+          aria-hidden="true"
+        >
       </section>
 
       <section class="welcome section-wrap" id="welcome">
@@ -73,22 +87,21 @@
         <div class="welcome-copy">
           <p class="welcome-lead">Welcome to Rapha Senior Independence Shared Living</p>
           <p>
-            We provide a friendly and comfortable shared living environment for older
-            adults who want to enjoy independent living without living alone.
+            We provide a friendly, comfortable shared living environment for older adults
+            who want the freedom of independent living without the isolation of living alone.
           </p>
           <p>
-            We understand that living alone can sometimes be lonely and expensive. Our
-            goal is to give seniors another housing option where they can enjoy comfort,
-            friendship, and a sense of belonging.
+            We understand that living alone can sometimes feel lonely or costly. Our goal
+            is to offer another housing option where seniors can enjoy comfort,
+            friendship, and a strong sense of belonging.
           </p>
           <p>
-            Residents can enjoy their own personal space while sharing common areas,
+            Residents can enjoy privacy in their own space while also sharing common areas,
             meals, and activities with others.
           </p>
           <p>
-            Our community is built on respect, kindness, independence, and friendship.
-            We believe everyone deserves a comfortable home and a place where they feel
-            welcome.
+            Our community is built on respect, kindness, independence, and friendship. We
+            believe everyone deserves a comfortable home and a place where they feel welcome.
           </p>
         </div>
       </section>
@@ -108,22 +121,20 @@
 
       <section class="coming-soon section-wrap" aria-label="More website information">
         <p class="eyebrow">GET TO KNOW RAPHA</p>
-        <h2>There’s more to discover.</h2>
-        <p>We’re building these pages together. More details will be added as you share them.</p>
+        <h2>Explore our community.</h2>
+        <p>Learn more about our housing, food services, and the welcoming life our residents enjoy each day.</p>
         <div class="coming-links">
-          <a id="housing" href="#housing"><span>Housing</span><span aria-hidden="true">↗</span></a>
+          <a href="/housing"><span>Housing</span><span aria-hidden="true">↗</span></a>
           <a href="/meals"><span>Meals &amp; Food Services</span><span aria-hidden="true">↗</span></a>
-          <a id="activities" href="#activities"><span>Activities</span><span aria-hidden="true">↗</span></a>
-          <a id="faqs" href="#faqs"><span>FAQs</span><span aria-hidden="true">↗</span></a>
-          <a id="contact" href="#contact"><span>Contact</span><span aria-hidden="true">↗</span></a>
+          <a href="/about"><span>About</span><span aria-hidden="true">↗</span></a>
+          <a href="/blue"><span>Live Well, Together</span><span aria-hidden="true">↗</span></a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <a class="brand footer-brand" href="#home">
-        <img class="brand-mark" src="{{ url_for('static', filename='rapha-mark.png') }}" alt="">
-        <span class="brand-name">Rapha <span>Senior Living</span></span>
+        <img class="brand-mark" src="{{ url_for('static', filename='rapha-mark.png') }}" alt="Rapha Senior Independence Shared Living">
       </a>
       <p>Live independently. Enjoy friendship. Feel at home.</p>
       <a class="back-to-top" href="#home">Back to top ↑</a>

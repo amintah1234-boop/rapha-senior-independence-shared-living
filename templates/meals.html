@@ -8,6 +8,11 @@
       content="Learn about meals and food service questions for Rapha Senior Independence Shared Living."
     >
     <title>Meals &amp; Food Services | Rapha Senior Independence Shared Living</title>
+    <link rel="canonical" href="https://independencesharedliving.com/meals">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Meals &amp; Food Services | Rapha Senior Independence Shared Living">
+    <meta property="og:description" content="Learn about meals and food service questions for Rapha Senior Independence Shared Living.">
+    <meta property="og:url" content="https://independencesharedliving.com/meals">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -16,13 +21,13 @@
     >
     <link rel="stylesheet" href="{{ url_for('static', filename='blue.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='meals.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='purple.css') }}">
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to main content</a>
     <header class="blue-header">
       <a class="blue-brand" href="/" aria-label="Rapha Senior Living home">
-        <img class="brand-mark" src="{{ url_for('static', filename='rapha-mark.png') }}" alt="">
-        <span class="brand-name">Rapha <small>Senior Independence Shared Living</small></span>
+        <img class="brand-mark" src="{{ url_for('static', filename='rapha-mark.png') }}" alt="Rapha Senior Independence Shared Living">
       </a>
       <nav class="blue-nav" aria-label="Main navigation">
         <a href="/">Home</a>
@@ -33,6 +38,18 @@
         <a href="/#faqs">FAQs</a>
         <a class="contact-link" href="/#contact">Contact</a>
       </nav>
+      <details class="blue-menu">
+        <summary class="menu-toggle">Menu <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span></summary>
+        <nav class="blue-nav" aria-label="Main navigation">
+          <a href="/">Home</a>
+          <a href="/about">About</a>
+          <a href="/housing">Housing</a>
+          <a href="#meals" aria-current="page">Meals &amp; Food Services</a>
+          <a href="/#activities">Activities</a>
+          <a href="/#faqs">FAQs</a>
+          <a class="contact-link" href="/#contact">Contact</a>
+        </nav>
+      </details>
     </header>
 
     <main id="main" class="meals-page">
@@ -41,11 +58,11 @@
           <p class="eyebrow">SHARED TABLES. WELCOMING MOMENTS.</p>
           <h1>Meals &amp; Food<br><span>Services</span></h1>
           <p class="meals-lead">
-            Sharing a meal can be a wonderful way to connect and feel at home.
+            Sharing a meal can be one of the simplest ways to feel settled, connected, and at home.
           </p>
           <p>
-            Learn about food-service options at Rapha and what to ask as you explore
-            shared living.
+            Learn about food-service options at Rapha and the kinds of everyday support that
+            can make shared living feel easier and more comfortable.
           </p>
         </div>
         <figure class="meals-photo">
@@ -61,15 +78,15 @@
         <div class="meals-details-heading">
           <p class="eyebrow">MEALS AND SHARED LIVING</p>
           <h2 id="meals-details-heading">Meals and Food Services</h2>
-          <p>We understand that having convenient meals is important.</p>
-          <p>Our community may offer meal arrangements to make everyday living easier.</p>
+          <p>We know that convenient, nourishing meals are an important part of everyday comfort.</p>
+          <p>Our community may offer meal arrangements that help make daily living easier and more enjoyable.</p>
         </div>
         <ul class="meal-offerings">
           <li>Breakfast, lunch, and dinner options.</li>
-          <li>Home-cooked meals.</li>
-          <li>Shared dining experiences.</li>
-          <li>Food preparation arrangements.</li>
-          <li>Consideration of food preferences.</li>
+          <li>Homestyle meals prepared with care.</li>
+          <li>Shared dining experiences and community connection.</li>
+          <li>Flexible food preparation arrangements.</li>
+          <li>Consideration of individual preferences and routines.</li>
         </ul>
         <p class="meals-note">
           We also encourage residents to enjoy meals together and build friendships around
@@ -85,8 +102,7 @@
 
     <footer class="blue-footer">
       <a class="blue-brand" href="/" aria-label="Rapha Senior Living home">
-        <img class="brand-mark" src="{{ url_for('static', filename='rapha-mark.png') }}" alt="">
-        <span class="brand-name">Rapha <small>Senior Independence Shared Living</small></span>
+        <img class="brand-mark" src="{{ url_for('static', filename='rapha-mark.png') }}" alt="Rapha Senior Independence Shared Living">
       </a>
       <p>Helping seniors enjoy independent living through comfortable shared housing, friendship, and community.</p>
       <a class="footer-top" href="#main">Back to top ↑</a>

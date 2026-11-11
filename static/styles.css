@@ -23,10 +23,103 @@ body {
   margin: 0;
   background: var(--cream);
   color: var(--ink);
+  animation: fadeInPage 0.8s ease-out both;
 }
 
 a {
   color: inherit;
+}
+
+@keyframes fadeInPage {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatSoft {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.site-header,
+.hero-copy,
+.hero-photo-wrap,
+.button,
+.hero-note,
+.photo-caption,
+.value-item,
+.coming-links a,
+.site-footer {
+  animation: fadeUp 0.7s ease-out both;
+}
+
+.hero-photo-wrap {
+  animation-delay: 120ms;
+  animation-name: floatSoft;
+}
+
+.hero-copy {
+  animation-delay: 80ms;
+}
+
+.main-nav a,
+.button,
+.coming-links a,
+.site-footer a,
+.nav-contact,
+.template-switch {
+  transition: transform 200ms ease, color 200ms ease, background 200ms ease,
+    border-color 200ms ease, box-shadow 200ms ease;
+}
+
+.main-nav a:hover,
+.main-nav a:focus-visible,
+.template-switch:hover,
+.template-switch:focus-visible,
+.button:hover,
+.button:focus-visible,
+.coming-links a:hover,
+.coming-links a:focus-visible {
+  transform: translateY(-1px);
+}
+
+.hero-photo {
+  transition: transform 300ms ease, filter 300ms ease;
+}
+
+.hero-photo-wrap:hover .hero-photo {
+  transform: scale(1.02);
+  filter: saturate(1.05);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 .site-header {
@@ -51,9 +144,9 @@ a {
 .brand-mark {
   display: block;
   flex: 0 0 auto;
-  height: 44px;
+  height: 96px;
   object-fit: contain;
-  width: 70px;
+  width: 128px;
 }
 
 .brand-name {
@@ -76,6 +169,14 @@ a {
   align-items: center;
   display: flex;
   gap: clamp(18px, 2.4vw, 36px);
+}
+
+.main-menu {
+  display: none;
+}
+
+.menu-toggle {
+  display: none;
 }
 
 .main-nav a {
@@ -254,13 +355,13 @@ h2 {
 
 .hero-watermark {
   bottom: -134px;
-  color: rgba(67, 93, 74, 0.035);
-  font-family: "Playfair Display", Georgia, serif;
-  font-size: 390px;
-  line-height: 1;
+  height: 390px;
+  object-fit: contain;
+  opacity: 0.035;
   pointer-events: none;
   position: absolute;
   right: -14px;
+  width: 390px;
 }
 
 .section-wrap {
@@ -419,8 +520,8 @@ h2 {
 }
 
 .footer-brand .brand-mark {
-  height: 32px;
-  width: 51px;
+  height: 75px;
+  width: 100px;
 }
 
 .footer-brand .brand-name {
@@ -572,6 +673,82 @@ h2 {
   .site-footer p {
     flex-basis: 100%;
     order: 1;
+  }
+}
+
+@media (max-width: 800px) {
+  .main-menu {
+    display: block;
+    width: 100%;
+  }
+
+  .site-header > .main-nav {
+    display: none;
+  }
+
+  .main-menu .menu-toggle {
+    align-items: center;
+    background: var(--white);
+    border: 1px solid #d5ddcf;
+    border-radius: 4px;
+    color: var(--green-dark);
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+    justify-content: space-between;
+    list-style: none;
+    padding: 11px 14px;
+  }
+
+  .main-menu .menu-toggle::-webkit-details-marker {
+    display: none;
+  }
+
+  .main-menu .menu-icon {
+    display: grid;
+    gap: 4px;
+    width: 20px;
+  }
+
+  .main-menu .menu-icon span {
+    background: currentColor;
+    border-radius: 2px;
+    height: 2px;
+    transition: transform 180ms ease, opacity 180ms ease;
+  }
+
+  .main-menu .main-nav {
+    background: var(--white);
+    border: 1px solid #e1e4dc;
+    border-radius: 4px;
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 7px;
+    overflow: visible;
+    padding: 5px 13px;
+    width: 100%;
+  }
+
+  .main-menu[open] .main-nav {
+    animation: fadeUp 180ms ease-out both;
+    display: flex;
+  }
+
+  .main-menu .main-nav a {
+    border-bottom: 1px solid #eceee8;
+    flex: initial;
+    font-size: 13px;
+    padding: 12px 4px;
+  }
+
+  .main-menu .main-nav a:last-child {
+    border-bottom: 0;
+  }
+
+  .main-menu .main-nav .template-switch {
+    display: block;
   }
 }
 

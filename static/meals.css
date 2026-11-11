@@ -5,7 +5,7 @@
 .meals-hero {
   align-items: center;
   background:
-    radial-gradient(ellipse at 2% 94%, rgba(198, 221, 231, 0.58), transparent 34%),
+    radial-gradient(ellipse at 2% 94%, rgba(216, 197, 231, 0.58), transparent 34%),
     var(--blue-pale);
   display: grid;
   gap: 7%;
@@ -34,7 +34,7 @@
 }
 
 .meals-hero-copy > p:not(.eyebrow) {
-  color: #435967;
+  color: #5b4b63;
   font-size: 18px;
   line-height: 1.7;
   margin: 14px 0 0;
@@ -42,7 +42,7 @@
 }
 
 .meals-hero-copy .meals-lead {
-  color: #354f60;
+  color: #5b4b63;
   font-size: 21px;
   font-weight: 700;
   line-height: 1.55;
@@ -69,7 +69,7 @@
 }
 
 .meals-photo figcaption {
-  color: #435967;
+  color: #5b4b63;
   font-size: 15px;
   padding: 13px 12px 15px;
 }
@@ -98,7 +98,7 @@
 }
 
 .meals-details-heading > p:last-child {
-  color: #435967;
+  color: #5b4b63;
   font-size: 18px;
   line-height: 1.65;
   margin: 12px auto 0;
@@ -115,8 +115,8 @@
 
 .meal-offerings li {
   align-items: center;
-  background: #edf4f6;
-  border: 1px solid #e0eaee;
+  background: #f4eff7;
+  border: 1px solid #ded2e8;
   border-radius: 10px;
   display: inline-flex;
   font-size: 19px;
@@ -128,7 +128,7 @@
 }
 
 .meal-offerings li::before {
-  background: var(--blue);
+  background: #7a4c87;
   border-radius: 50%;
   content: "";
   flex: 0 0 10px;
@@ -136,9 +136,9 @@
 }
 
 .meals-note {
-  background: #fff8e9;
-  border-left: 4px solid #b77c28;
-  color: #4a453a;
+  background: #f8f1fb;
+  border-left: 4px solid #7a4c87;
+  color: #5b4b63;
   font-size: 16px;
   line-height: 1.65;
   margin: 24px 0 0;

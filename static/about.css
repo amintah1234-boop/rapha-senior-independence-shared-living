@@ -4,7 +4,7 @@
 
 .about-hero {
   background:
-    radial-gradient(ellipse at 2% 94%, rgba(198, 221, 231, 0.58), transparent 34%),
+    radial-gradient(ellipse at 2% 94%, rgba(216, 197, 231, 0.58), transparent 34%),
     var(--blue-pale);
   padding: 72px 10% 78px;
   text-align: center;
@@ -32,7 +32,7 @@
 }
 
 .about-hero-lead {
-  color: #435967;
+  color: #5b4b63;
   font-weight: 700;
   font-size: 22px;
   line-height: 1.6;
@@ -57,7 +57,7 @@
 }
 
 .story-copy {
-  color: #435967;
+  color: #5b4b63;
   font-size: 18px;
   line-height: 1.8;
 }
@@ -82,18 +82,18 @@
 }
 
 .pillar-card {
-  background: #e7eff3;
+  background: #ede5f3;
   min-height: 300px;
   padding: 32px;
   position: relative;
 }
 
 .pillar-card.vision-card {
-  background: #edf4f6;
+  background: #f4eff7;
 }
 
 .pillar-number {
-  color: #53778b;
+  color: #7a4c87;
   font-size: 14px;
   font-weight: 700;
   position: absolute;
@@ -111,7 +111,7 @@
 }
 
 .pillar-card > p:last-child {
-  color: #435967;
+  color: #5b4b63;
   font-size: 18px;
   line-height: 1.75;
   margin: 0;
@@ -138,7 +138,7 @@
 }
 
 .values-intro .eyebrow {
-  color: #c8dce6;
+  color: #e2d4ed;
 }
 
 .values-intro h2 {
@@ -173,7 +173,7 @@
 }
 
 .values-list li::before {
-  color: #a9ccdd;
+  color: #cbb6df;
   content: "•";
   font-size: 25px;
   left: 3px;

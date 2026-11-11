@@ -8,6 +8,11 @@
       content="Learn about Rapha Senior Independence Shared Living, our mission, vision, and community values."
     >
     <title>About Us | Rapha Senior Independence Shared Living</title>
+    <link rel="canonical" href="https://independencesharedliving.com/about">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="About Us | Rapha Senior Independence Shared Living">
+    <meta property="og:description" content="Learn about Rapha Senior Independence Shared Living, our mission, vision, and community values.">
+    <meta property="og:url" content="https://independencesharedliving.com/about">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -16,13 +21,13 @@
     >
     <link rel="stylesheet" href="{{ url_for('static', filename='blue.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='purple.css') }}">
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to main content</a>
     <header class="blue-header">
       <a class="blue-brand" href="/" aria-label="Rapha Senior Living home">
-        <img class="brand-mark" src="{{ url_for('static', filename='rapha-mark.png') }}" alt="">
-        <span class="brand-name">Rapha <small>Senior Independence Shared Living</small></span>
+        <img class="brand-mark" src="{{ url_for('static', filename='rapha-mark.png') }}" alt="Rapha Senior Independence Shared Living">
       </a>
       <nav class="blue-nav" aria-label="Main navigation">
         <a href="/">Home</a>
@@ -33,33 +38,45 @@
         <a href="/#faqs">FAQs</a>
         <a class="contact-link" href="/#contact">Contact</a>
       </nav>
+      <details class="blue-menu">
+        <summary class="menu-toggle">Menu <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span></summary>
+        <nav class="blue-nav" aria-label="Main navigation">
+          <a href="/">Home</a>
+          <a href="#about-intro" aria-current="page">About</a>
+          <a href="/housing">Housing</a>
+          <a href="/meals">Meals &amp; Food Services</a>
+          <a href="/#activities">Activities</a>
+          <a href="/#faqs">FAQs</a>
+          <a class="contact-link" href="/#contact">Contact</a>
+        </nav>
+      </details>
     </header>
 
     <main id="main" class="about-page">
       <section class="about-hero" id="about-intro">
         <h1>About Us</h1>
         <p class="about-hero-lead">
-          Helping seniors enjoy independent living through comfortable shared housing,
-          friendship, and community.
+          We help seniors enjoy independent living in a warm, respectful community where
+          comfort, connection, and dignity are part of everyday life.
         </p>
       </section>
 
       <section class="about-story" aria-labelledby="story-heading">
         <div class="story-heading">
           <p class="eyebrow">OUR COMMUNITY</p>
-          <h2 id="story-heading">A place to feel<br>respected and at home.</h2>
+          <h2 id="story-heading">A place to feel<br>respected, supported, and at home.</h2>
         </div>
         <div class="story-copy">
-          <p>Our community was created to give seniors a comfortable place to live.</p>
+          <p>Rapha was created to give older adults a comfortable, supportive place to live.</p>
           <p>
-            We believe older adults should have the opportunity to enjoy life, meet new
-            people, and maintain their independence.
+            We believe seniors deserve the opportunity to enjoy life, build meaningful
+            relationships, and maintain their independence with dignity.
           </p>
           <p>
-            Our shared living home provides a welcoming environment where residents can
-            enjoy their privacy while also having opportunities to socialize and make friends.
+            Our shared living home offers residents privacy, companionship, and access to a
+            welcoming community where they can feel comfortable socializing and making friends.
           </p>
-          <p>We want everyone who lives in our community to feel respected, valued, and at home.</p>
+          <p>We want every resident to feel respected, valued, and truly at home.</p>
         </div>
       </section>
 
@@ -94,16 +111,16 @@
           <span class="pillar-number" aria-hidden="true">01</span>
           <h2>Our Mission</h2>
           <p>
-            Our mission is to provide comfortable and shared housing for seniors while
-            encouraging independence, friendship, and a better quality of life.
+            We provide comfortable shared housing that supports independence, community, and
+            a higher quality of life for older adults.
           </p>
         </article>
         <article class="pillar-card vision-card">
           <span class="pillar-number" aria-hidden="true">02</span>
           <h2>Our Vision</h2>
           <p>
-            Our vision is to create a happy and welcoming community where seniors can
-            enjoy living together, build friendships, and feel less alone.
+            We envision a warm, welcoming community where seniors can live with dignity,
+            enjoy meaningful connections, and feel less alone.
           </p>
         </article>
       </section>
@@ -133,8 +150,7 @@
 
     <footer class="blue-footer">
       <a class="blue-brand" href="/" aria-label="Rapha Senior Living home">
-        <img class="brand-mark" src="{{ url_for('static', filename='rapha-mark.png') }}" alt="">
-        <span class="brand-name">Rapha <small>Senior Independence Shared Living</small></span>
+        <img class="brand-mark" src="{{ url_for('static', filename='rapha-mark.png') }}" alt="Rapha Senior Independence Shared Living">
       </a>
       <p>Helping seniors enjoy independent living through comfortable shared housing, friendship, and community.</p>
       <a class="footer-top" href="#main">Back to top ↑</a>

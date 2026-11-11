@@ -1,0 +1,217 @@
+:root {
+  --navy: #432653;
+  --blue: #68428a;
+  --blue-mid: #9273ab;
+  --blue-light: #e8ddf0;
+  --blue-pale: #f4eff7;
+  --ink: #31283a;
+  --muted: #6e6375;
+}
+
+.blue-header .blue-brand,
+.blue-brand small,
+.blue-nav a,
+.blue-footer,
+.footer-top,
+.blue-hero h1,
+.blue-about h2,
+.values-heading h2,
+.blue-more h2,
+.faq-heading h2,
+.faq-list summary,
+.more-links a,
+.contact-copy h2,
+.contact-slogan h3,
+.contact-invitation,
+.contact-card h3,
+.contact-card li strong,
+.about-hero h1,
+.story-heading h2,
+.pillar-card h2,
+.values-intro h2,
+.about-invitation h2,
+.housing-hero-copy h1,
+.amenities-heading h2,
+.detail-heading h2,
+.resident-fit-card h2,
+.transport-options h3,
+.resident-fit-card h3,
+.meals-hero-copy h1,
+.meals-details-heading h2,
+.meals-next h2 {
+  color: var(--navy);
+}
+
+.blue-nav .contact-link:hover,
+.primary-button,
+.contact-link,
+.housing-promise {
+  background-color: var(--navy);
+}
+
+.primary-button:hover {
+  color: var(--blue);
+}
+
+.blue-nav .contact-link:hover {
+  background-color: var(--blue);
+}
+
+.blue-nav .contact-link:hover,
+.primary-button,
+.primary-button:hover,
+.contact-link {
+  color: white;
+}
+
+.primary-button:hover {
+  background-color: var(--blue);
+}
+
+.blue-hero,
+.about-hero,
+.housing-hero,
+.meals-hero,
+.contact-section {
+  background:
+    radial-gradient(ellipse at 2% 94%, rgba(216, 197, 231, 0.58), transparent 34%),
+    var(--blue-pale);
+}
+
+.blue-hero .eyebrow,
+.eyebrow,
+.hero-assurance,
+.hero-bottom,
+.heading-detail,
+.values-grid > div > span,
+.more-links a span:first-child,
+.blue-nav a:hover,
+.housing-hero-copy h1 span,
+.meals-hero-copy h1 span {
+  color: var(--blue);
+}
+
+.blue-hero .eyebrow span,
+.assurance-icon,
+.heading-detail span,
+.faq-list summary::marker,
+.contact-card li::before,
+.detail-list li::before,
+.meal-offerings li::before {
+  background-color: var(--blue-mid);
+  color: var(--blue);
+}
+
+.hero-visual::before {
+  border-color: rgba(67, 38, 83, 0.3);
+}
+
+.bottom-rule,
+.heading-detail span {
+  background-color: #cbb9d9;
+}
+
+.gallery-heading h2,
+.gallery-heading > p:last-child,
+.about-hero-lead,
+.story-copy,
+.pillar-card > p:last-child,
+.housing-lead,
+.housing-slogan,
+.housing-photo figcaption,
+.agreement-note,
+.detail-heading > p:not(.eyebrow),
+.resident-fit-card > p:not(.eyebrow),
+.detail-list li,
+.detail-closing,
+.meals-hero-copy > p:not(.eyebrow),
+.meals-details-heading > p:last-child,
+.meals-photo figcaption,
+.contact-copy > p:not(.eyebrow),
+.contact-card li,
+.contact-slogan p,
+.values-grid p {
+  color: #51465a;
+}
+
+.blue-values,
+.pillar-card,
+.amenities-grid li,
+.meal-offerings li,
+.transport-section,
+.choose-card {
+  background-color: #ede5f3;
+}
+
+.pillar-card.vision-card,
+.amenities-grid li,
+.meal-offerings li {
+  border-color: #ded2e8;
+}
+
+.pillar-number,
+.amenities-grid li > span,
+.amenities-grid li strong,
+.detail-subheading,
+.more-links a span:last-child {
+  color: var(--blue);
+}
+
+.values-intro .eyebrow {
+  color: #e2d4ed;
+}
+
+.values-list li::before {
+  color: #cbb6df;
+}
+
+.amenities-grid li > span {
+  color: var(--blue);
+}
+
+.values-grid > div {
+  border-color: #d3c5df;
+}
+
+.faq-section,
+.resident-fit-card {
+  background-color: #f3eff6;
+}
+
+.faq-list details,
+.faq-list details:first-child,
+.more-links,
+.more-links a,
+.contact-slogan,
+.blue-footer {
+  border-color: #ded4e7;
+}
+
+.more-links a:hover {
+  background-color: #f4f0f7;
+}
+
+.contact-card {
+  border-color: #ded3e8;
+  box-shadow: 0 12px 30px rgba(67, 38, 83, 0.08);
+}
+
+.image-stamp,
+.blue-menu .menu-toggle {
+  color: var(--navy);
+}
+
+@media (max-width: 1000px) {
+  .blue-menu .menu-toggle {
+    background: var(--blue-pale);
+    border-color: #d7c9e4;
+  }
+
+  .blue-menu .blue-nav {
+    border-color: #e4d9ec;
+  }
+
+  .blue-menu .blue-nav a {
+    border-color: #eee8f2;
+  }
+}

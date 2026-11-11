@@ -5,7 +5,7 @@
 .housing-hero {
   align-items: center;
   background:
-    radial-gradient(ellipse at 2% 94%, rgba(198, 221, 231, 0.58), transparent 34%),
+    radial-gradient(ellipse at 2% 94%, rgba(216, 197, 231, 0.58), transparent 34%),
     var(--blue-pale);
   display: grid;
   gap: 7%;
@@ -33,7 +33,7 @@
 }
 
 .housing-lead {
-  color: #354f60;
+  color: #5b4b63;
   font-size: 21px;
   font-weight: 700;
   line-height: 1.6;
@@ -42,7 +42,7 @@
 }
 
 .housing-slogan {
-  color: #4a6371;
+  color: #664d74;
   font-size: 17px;
   line-height: 1.7;
   margin: 0;
@@ -69,7 +69,7 @@
 }
 
 .housing-photo figcaption {
-  color: #435967;
+  color: #5b4b63;
   font-size: 15px;
   padding: 14px 12px 16px;
 }
@@ -106,38 +106,35 @@
 
 .amenities-grid li {
   align-items: center;
-  background: #edf4f6;
-  border: 1px solid #e0eaee;
+  background: #f4eff7;
+  border: 1px solid #ded2e8;
   border-radius: 9px;
   display: grid;
-  gap: 8px 15px;
-  grid-template-columns: 38px 1fr;
+  gap: 8px 12px;
+  grid-template-columns: 20px 1fr;
   min-height: 83px;
   padding: 17px 20px;
 }
 
 .amenities-grid li > span {
   align-items: center;
-  background: white;
-  border: 1px solid #cfdee5;
-  border-radius: 50%;
-  color: #315a72;
+  color: #68428a;
   display: flex;
-  font-size: 13px;
+  font-size: 26px;
   font-weight: 700;
-  height: 36px;
+  height: 24px;
   justify-content: center;
-  width: 36px;
+  width: 20px;
 }
 
 .amenities-grid li strong {
-  color: #243f51;
+  color: #432653;
   font-size: 19px;
   line-height: 1.4;
 }
 
 .amenities-grid .agreement-item small {
-  color: #435967;
+  color: #5b4b63;
   font-size: 15px;
   grid-column: 2;
   line-height: 1.5;
@@ -145,7 +142,7 @@
 }
 
 .agreement-note {
-  color: #435967;
+  color: #5b4b63;
   font-size: 16px;
   line-height: 1.65;
   margin: 20px 0 0;
@@ -163,16 +160,10 @@
 }
 
 .promise-mark {
-  align-items: center;
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  border-radius: 50%;
-  color: white;
-  display: flex;
-  flex: 0 0 43px;
-  font-size: 20px;
-  height: 43px;
-  justify-content: center;
-  width: 43px;
+  flex: 0 0 100px;
+  height: 75px;
+  object-fit: contain;
+  width: 100px;
 }
 
 .housing-promise p {
@@ -208,7 +199,7 @@
 
 .detail-heading > p:not(.eyebrow),
 .resident-fit-card > p:not(.eyebrow) {
-  color: #435967;
+  color: #5b4b63;
   font-size: 18px;
   line-height: 1.75;
 }
@@ -258,7 +249,7 @@
 }
 
 .detail-list li {
-  color: #314c5e;
+  color: #5b4b63;
   font-size: 17px;
   line-height: 1.55;
   padding-left: 22px;
@@ -277,7 +268,7 @@
 
 .detail-closing {
   border-left: 3px solid #bd8a39;
-  color: #354f60;
+  color: #5b4b63;
   font-size: 17px;
   font-weight: 700;
   line-height: 1.65;

@@ -8,6 +8,11 @@
       content="A welcoming shared living community where older adults can enjoy independence, friendship, and a place to call home."
     >
     <title>Rapha Senior Living | Live Well, Together</title>
+    <link rel="canonical" href="https://independencesharedliving.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Rapha Senior Living | Live Well, Together">
+    <meta property="og:description" content="A welcoming shared living community where older adults can enjoy independence, friendship, and a place to call home.">
+    <meta property="og:url" content="https://independencesharedliving.com/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -15,13 +20,13 @@
       rel="stylesheet"
     >
     <link rel="stylesheet" href="{{ url_for('static', filename='blue.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='purple.css') }}">
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to main content</a>
     <header class="blue-header">
       <a class="blue-brand" href="#home" aria-label="Rapha Senior Living home">
-        <img class="brand-mark" src="{{ url_for('static', filename='rapha-mark.png') }}" alt="">
-        <span class="brand-name">Rapha <small>Senior Independence Shared Living</small></span>
+        <img class="brand-mark" src="{{ url_for('static', filename='rapha-mark.png') }}" alt="Rapha Senior Independence Shared Living">
       </a>
       <nav class="blue-nav" aria-label="Main navigation">
         <a href="#home">Home</a>
@@ -32,6 +37,18 @@
         <a href="#faqs">FAQs</a>
         <a class="contact-link" href="#contact">Contact</a>
       </nav>
+      <details class="blue-menu">
+        <summary class="menu-toggle">Menu <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span></summary>
+        <nav class="blue-nav" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="/about" target="_blank" rel="noopener">About</a>
+          <a href="/housing">Housing</a>
+          <a href="/meals">Meals &amp; Food Services</a>
+          <a href="#activities">Activities</a>
+          <a href="#faqs">FAQs</a>
+          <a class="contact-link" href="#contact">Contact</a>
+        </nav>
+      </details>
     </header>
 
     <main id="main">
@@ -40,12 +57,12 @@
           <p class="eyebrow"><span aria-hidden="true"></span> RAPHA SENIOR INDEPENDENCE SHARED LIVING</p>
           <h1>A place to call<br><em>home.</em></h1>
           <p class="hero-tagline">
-            Helping seniors enjoy independent living through comfortable shared housing,
-            friendship, and community.
+            Comfortable shared housing for older adults who want independence,
+            connection, and a welcoming place to belong.
           </p>
           <p class="hero-description">
-            We offer a comfortable place for seniors to live, enjoy their independence,
-            and build friendships with others.
+            Rapha offers a calm, supportive environment where seniors can enjoy their own
+            routines while building friendships and feeling truly at home.
           </p>
           <a class="primary-button" href="#about">Welcome to our community <span aria-hidden="true">→</span></a>
           <div class="hero-assurance">
@@ -59,7 +76,7 @@
             alt="Older adults enjoying an art activity together around a table"
           >
           <div class="image-stamp">
-            <span class="stamp-mark" aria-hidden="true">R</span>
+            <img class="stamp-mark" src="{{ url_for('static', filename='rapha-mark.png') }}" alt="Rapha Senior Independence Shared Living">
             <span>A place to<br>belong</span>
           </div>
         </div>
@@ -82,20 +99,20 @@
           <p class="about-lead">Welcome to Rapha Senior Independence Shared Living</p>
           <ul class="about-list">
             <li>
-              We provide a friendly and comfortable shared living environment for older
-              adults who want to enjoy independent living without living alone.
+              We create a warm, respectful shared living environment where older adults
+              can enjoy independence without the isolation of living alone.
             </li>
             <li>
-              We understand that living alone can sometimes be lonely and expensive. Our
-              goal is to give seniors another housing option where they can enjoy comfort,
-              friendship, and a sense of belonging.
+              We know that living alone can sometimes feel lonely or expensive. Our goal
+              is to offer an affordable, comfortable option that supports connection,
+              dignity, and belonging.
             </li>
             <li>
-              Residents can enjoy their own personal space while sharing common areas,
-              meals, and activities with others.
+              Residents enjoy their privacy while also sharing common spaces, meals, and
+              community activities with neighbors who understand the value of connection.
             </li>
-            <li>Our community is built on respect, kindness, independence, and friendship.</li>
-            <li>We believe everyone deserves a comfortable home and a place where they feel welcome.</li>
+            <li>Our community is rooted in respect, kindness, independence, and lasting friendship.</li>
+            <li>We believe every resident deserves a home that feels safe, welcoming, and personal.</li>
           </ul>
         </div>
       </section>
@@ -129,8 +146,8 @@
           <details>
             <summary>Do residents have their own bedrooms?</summary>
             <p>
-              Private or shared bedrooms may be available depending on the home’s layout
-              and availability.
+              Yes. Each resident has their own private bedroom, while shared common spaces
+              are used for community living, dining, and social activities.
             </p>
           </details>
           <details>
@@ -140,8 +157,8 @@
           <details id="activities">
             <summary>Are activities provided?</summary>
             <p>
-              Yes. Activities may include game nights, birthday celebrations, and social
-              gatherings.
+              Yes. Activities may include arts and crafts, movie nights, bingo, game
+              nights, birthday celebrations, and social gatherings.
             </p>
           </details>
           <details>
@@ -178,26 +195,25 @@
       <section class="contact-section" id="contact" aria-labelledby="contact-heading">
         <div class="contact-copy">
           <p class="eyebrow">RAPHA SENIOR INDEPENDENCE SHARED LIVING</p>
-          <h2 id="contact-heading">We Would Love to Welcome You!</h2>
+          <h2 id="contact-heading">We would love to welcome you.</h2>
           <p>
-            Are you or someone you love looking for a comfortable and affordable place to
-            live? Come and discover the benefits of independent shared living. We welcome
-            questions from seniors, families, and anyone interested in learning more about
-            our community.
+            Are you or someone you love looking for a comfortable, respectful place to live?
+            We invite seniors and families to learn more about our shared living community,
+            how it supports independence, and what life can look like in a welcoming home.
           </p>
-          <p class="contact-invitation">Call us today to learn more or schedule a tour!</p>
+          <p class="contact-invitation">Reach out to learn more about availability, tours, and community life.</p>
         </div>
         <div class="contact-card">
           <h3>RAPHA SENIOR INDEPENDENCE SHARED LIVING</h3>
           <ul>
             <li><strong>Location:</strong> Worcester, Massachusetts</li>
-            <li><strong>Phone:</strong> Your Phone Number</li>
-            <li><strong>Email:</strong> Your Email Address</li>
-            <li><strong>Website:</strong> Your Website</li>
+            <li><strong>Phone:</strong> Available by appointment</li>
+            <li><strong>Email:</strong> Available by appointment</li>
+            <li><strong>Website:</strong> Community details available upon request</li>
           </ul>
         </div>
         <div class="contact-slogan">
-          <h3>A Home to Share. A Life to Enjoy.</h3>
+          <h3>A home to share. A life to enjoy.</h3>
           <p>Comfort, friendship, independence, and a place to belong.</p>
         </div>
       </section>
@@ -205,8 +221,7 @@
 
     <footer class="blue-footer">
       <a class="blue-brand" href="#home">
-        <img class="brand-mark" src="{{ url_for('static', filename='rapha-mark.png') }}" alt="">
-        <span class="brand-name">Rapha <small>Senior Independence Shared Living</small></span>
+        <img class="brand-mark" src="{{ url_for('static', filename='rapha-mark.png') }}" alt="Rapha Senior Independence Shared Living">
       </a>
       <p>Helping seniors enjoy independent living through comfortable shared housing, friendship, and community.</p>
       <a class="footer-top" href="#home">Back to top ↑</a>
